@@ -218,13 +218,10 @@ const YMapsMap = withErrorBoundary(
   withYMaps<MapProps & WithYMapsProps & WithInstanceRef & AnyObject>(
     Map,
     true,
-    ['Map']
+    ['Map'],
+    width = 320,
+    height = 240
   )
 );
-
-YMapsMap.defaultProps = {
-  width: 320,
-  height: 240,
-};
 
 export default YMapsMap;
